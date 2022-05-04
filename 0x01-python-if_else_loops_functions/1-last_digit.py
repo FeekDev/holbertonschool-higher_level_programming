@@ -7,7 +7,8 @@ if number < 0:
     last_dig = number % (-10)
 
 # take last digit
-last_dig = number % 10
+else:
+    last_dig = number % 10
 
 # check greather than 5
 if last_dig > 5:
