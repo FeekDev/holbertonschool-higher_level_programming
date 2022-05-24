@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+"""
+    This Module that defines a square
+    ...
+    th purpose is init the file for create
+    a square
+    """
+
+
 class Square:
     """
     The class is for init create a sqaure
@@ -13,3 +21,8 @@ class Square:
         only itself.
         """
         return
+
+
+'print(__import__("0.square.py").__doc__)'
+'print(__import__("0.square.py").Square.__doc__)'
+'print(__import__("0.square.py").Square._init_.__doc__)'
