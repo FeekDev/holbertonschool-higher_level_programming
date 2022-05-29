@@ -21,8 +21,3 @@ class Square:
         only itself.
         """
         return
-
-
-'print(__import__("0.square.py").__doc__)'
-'print(__import__("0.square.py").Square.__doc__)'
-'print(__import__("0.square.py").Square._init_.__doc__)'
