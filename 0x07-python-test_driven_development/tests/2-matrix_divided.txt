@@ -1,0 +1,29 @@
+The ``matrix_divided`` module
+======================
+
+Using ``matrix_divided``
+-------------------
+
+This is import ``matrix_divided`` from the ``2-matrix_divided.py`` module:
+
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Now use it:
+
+    >>> matrix_divided([[1, 2, 3], [4, 5, 6]], 3)
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+New matrix of int:
+
+    >>> matrix_divided([[1, 1, 2], [2, 3, 3]], 1)
+    [[1.0, 1.0, 2.0], [2.0, 3.0, 3.0]]
+
+New matrix of float:
+
+    >>> matrix_divided([[2.37, 3.37, 2.47], [2.57, 3.57, 3.67]], 2)
+    [[1.19, 1.69, 1.24], [1.28, 1.78, 1.83]]
+
+New matrix of int:
+
+    >>> matrix_divided([[20, 30, 40], [50, 60, 70]], 3)
+    [[6.67, 10.0, 13.33], [16.67, 20.0, 23.33]]

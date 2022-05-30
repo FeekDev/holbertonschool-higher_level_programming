@@ -1,0 +1,49 @@
+The ``add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+This is import ``add_integer`` from the ``0-add_integer.py`` module:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Now use it:
+
+    >>> add_integer(2)
+    100
+
+Now add int a and b:
+
+    >>> add_integer(2, 2)
+    4
+
+Now add float a and b float:
+
+    >>> add_integer(5.3, 5.3)
+    10
+
+Now add int a and b float:
+
+    >>> add_integer(100, 100.6)
+    200
+
+Now add float a and b float:
+
+    >>> add_integer(44.9, 88.9)
+    133
+
+Now add float a and b float:
+
+    >>> add_integer(55.9, 55.9)
+    111
+
+Now add int negative:
+
+    >>> add_integer(-4)
+    94
+
+Now add int negative:
+
+    >>> add_integer(-98)
+    0
