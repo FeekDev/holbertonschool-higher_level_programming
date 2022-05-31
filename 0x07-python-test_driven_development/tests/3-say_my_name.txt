@@ -1,0 +1,24 @@
+The ``3-say_my_name`` module
+============================
+
+Using ``3-say_my_name``
+---------------------
+
+Import module:
+    	>>> say_my_name = __import__('3-say_my_name').say_my_name
+        
+Test basic:
+	>>> say_my_name("John", "Smith")
+	My name is John Smith
+
+Test firstname:
+	>>> say_my_name("John")
+	My name is John 
+
+Test lastname empty:
+	>>> say_my_name("John", "")
+	My name is John 
+
+Test empty firstname:
+	>>> say_my_name("", "Smith")
+	My name is  Smith
