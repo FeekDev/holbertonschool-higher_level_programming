@@ -16,8 +16,8 @@ class Rectangle:
         width: the purpose is set the value
         height: the purpose is set the value
         """
-        self.__height = height
-        self.__width = width
+        self.height = height
+        self.width = width
 
     def width(self):
         """The getter parameters: itself"""
