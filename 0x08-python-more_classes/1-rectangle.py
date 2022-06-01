@@ -20,9 +20,11 @@ class Rectangle:
         self.__width = width
 
     def width(self):
+        """The getter parameters: itself"""
         return self.__width
 
     def width(self, value):
+        """The setter parameters: value"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         elif value < 0:
@@ -33,8 +35,10 @@ class Rectangle:
 
     def height(self):
         return self.__height
+        """The getter parameters: itself"""
 
     def height(self, value):
+        """The setter parameters: value"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         elif value < 0:
