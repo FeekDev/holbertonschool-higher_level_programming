@@ -1,12 +1,12 @@
-The ``0-lookup`` module
+The ``1-my_list`` module
 ======================
 
-Using ``lookup``
+Using ``print_sorted``
 -------------------
 
-This is import ``lookup`` from the ``0-lookup.py`` module:
+This is import ``print_sorted`` from the ``1-my_list`` module:
 
-    >>> lookup = __import__('0-lookup').lookup
+    >>> MyList = __import__('1-my_list').MyList
 
 Example 1 in desorganized:
 
