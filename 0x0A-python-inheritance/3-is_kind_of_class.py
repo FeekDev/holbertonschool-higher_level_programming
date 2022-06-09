@@ -12,4 +12,3 @@ def is_kind_of_class(obj, a_class):
     otherwhise return false
     """
     return isinstance(obj, a_class)
-
