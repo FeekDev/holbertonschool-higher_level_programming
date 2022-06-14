@@ -8,11 +8,11 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """ Constructor"""
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
-    """getters and setters"""
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
+    
     @property
     def width(self):
         return self.__width
@@ -48,18 +48,21 @@ class Rectangle(Base):
     def y(self, value):
         self.validate_attributes("y", value)
         self.__y = value
-    """ validate """
+
     def validate_attributes(self, name, value, eq=True):
+        """ validate the value"""
         if type(value) is not int:
             raise TypeError(f"{name} must be an integer")
         if eq and value < 0:
             raise ValueError(f"{name} must be >= 0")
         elif not eq and value <= 0:
             raise ValueError(f"{name} must be > 0")
-    """ return the area"""
+
     def area(self):
+        """ return the area"""
         return self.__width * self.__height
-    """ Display the area"""
+
     def display(self):
+        """ Display the area"""
         for i in range(self.__height):
             print(self.__width * '#')
