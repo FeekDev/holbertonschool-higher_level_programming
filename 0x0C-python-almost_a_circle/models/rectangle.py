@@ -19,7 +19,7 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        self.validate_attributes("width", value)
+        self.validate_attributes("width", value, False)
         self.__width = value
 
     @property
@@ -28,7 +28,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        self.validate_attributes("height", value)
+        self.validate_attributes("height", value, False)
         self.__height = value
 
     @property
@@ -63,4 +63,3 @@ class Rectangle(Base):
     def display(self):
         for i in range(self.__height):
             print(self.__width * '#')
-    def __str__()
