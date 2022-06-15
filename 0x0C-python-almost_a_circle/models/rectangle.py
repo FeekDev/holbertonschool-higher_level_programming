@@ -78,6 +78,7 @@ class Rectangle(Base):
         return f"[Rectangle] ({id_st}) {x_st}/{y_st} - {width_st}/{height_st}"
 
     def update(self, *args, **kwargs):
+        """number of arguments"""
         argc = len(args)
         kwargc = len(kwargs)
         modif_attrs = ['id', 'width', 'height', 'x', 'y']
