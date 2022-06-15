@@ -76,3 +76,19 @@ class Rectangle(Base):
         width_st = self.__width
         height_st = self.__height
         return f"[Rectangle] ({id_st}) {x_st}/{y_st} - {width_st}/{height_st}"
+
+    def update(self, *args, **kwargs):
+        argc = len(args)
+        kwargc = len(kwargs)
+        modif_attrs = ['id', 'width', 'height', 'x', 'y']
+
+        if argc > 5:
+            argc = 5
+
+        if argc > 0:
+            for i in range(argc):
+                setattr(self, modif_attrs[i], args[i])
+        elif kwargc > 0:
+            for k, v in kwargs.items():
+                if k in modif_attrs:
+                    setattr(self, k, v)
