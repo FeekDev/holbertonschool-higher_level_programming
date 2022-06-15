@@ -59,13 +59,14 @@ class Rectangle(Base):
             raise ValueError(f"{name} must be > 0")
 
     def area(self):
-        """ return the area"""
+        """return the area"""
         return self.__width * self.__height
 
     def display(self):
-        """ Display the area"""
-        for i in range(self.__height):
-            print(self.__width * '#')
+        """Display the area"""
+        print(self.__y * '\n', end='')
+        for j in range(self.__height):
+            print(str(self.__x * ' ') + str(self.__width * '#'))
 
     def __str__(self):
         """return info about rectangle"""
