@@ -8,15 +8,9 @@ module.exports = class Rectangle {
   }
 
   print () {
-    let string = '';
+    const string = 'x';
     for (let i = 0; i < this.height; i++) {
-      for (let j = 0; j < this.width; j++) {
-        string += 'x';
-      }
-      if (i < this.height - 1) {
-        string += '\n';
-      }
+      console.log(string.repeat(this.width));
     }
-    console.log(string);
   }
 };
