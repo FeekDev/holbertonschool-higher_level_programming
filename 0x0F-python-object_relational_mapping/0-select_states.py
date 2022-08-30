@@ -3,7 +3,13 @@
 import MySQLdb
 from sys import argv
 
-db_connection = MySQLdb.connect("localhost", argv[1], argv[2], argv[3])
+host = "localhost"
+port = 3306
+usr = argv[1]
+key = argv[2]
+dB = argv[3]
+
+db_connection = MySQLdb.connect(host, port=3306, user=usr, password=key, db=dB)
 cur = db_connection.cursor()
 cur.execute("SELECT * FROM states ORDER BY states.id ASC")
 query_rows = cur.fetchall()
