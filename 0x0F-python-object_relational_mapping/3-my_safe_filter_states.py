@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""This script inser data in db"""
+"""
+this script offering protection
+from Python SQL injection
+"""
 import MySQLdb
 from sys import argv
 
