@@ -9,9 +9,9 @@ if __name__ == "__main__":
                                     passwd=argv[2], db=argv[3])
     cur = db_connection.cursor()
     cur.execute("""SELECT cities.id, cities.name, states.name
-                FROM states
-                INNER JOIN cities
-                ON states.id = cities.id
+                FROM cities
+                INNER JOIN states
+                ON cities.id = states.id
                 ORDER BY cities.id""")
     query_rows = cur.fetchall()
     for row in query_rows:
