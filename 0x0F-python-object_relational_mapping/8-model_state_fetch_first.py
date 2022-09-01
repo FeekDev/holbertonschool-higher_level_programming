@@ -17,10 +17,10 @@ if __name__ == "__main__":
     session = Session()
     result = session.query(State)
 
-    if not (result):
-        print("Nothing\n")
-    else:
+    if result is None:
         for list in result.filter(State.id == 1):
             print(f"{list.id}: {list.name}")
-
+    else:
+        print('Nothing')
+        
     session.close()
