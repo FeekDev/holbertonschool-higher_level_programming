@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+this script list all states
 """
 from sys import argv
 from model_state import Base, State
