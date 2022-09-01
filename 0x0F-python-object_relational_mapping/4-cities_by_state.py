@@ -12,7 +12,7 @@ if __name__ == "__main__":
                 FROM states
                 INNER JOIN cities
                 ON states.id = cities.id
-                ORDER BY cities.id ASC""")
+                ORDER BY cities.id""")
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
