@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-this script list all states
+this script filtr the nth position id
 """
 import sys
 from model_state import Base, State
