@@ -15,11 +15,12 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
+    result = session.query(State)
 
-    if (session.query(State)):
-        for list in session.query(State).filter(State.id == 1):
-            print(f"{list.id}: {list.name}")
-    else:
+    if not (result):
         print("Nothing\n")
+    else:
+        for list in result.filter(State.id == 1):
+            print(f"{list.id}: {list.name}")
 
     session.close()
