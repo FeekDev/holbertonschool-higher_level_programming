@@ -1,3 +1,3 @@
 #!/bin/bash
 #
-curl -Lsi OPTIONS "$1"
+curl -Lsi -X OPTIONS "$1" | grep Allow | cut -c 8-
